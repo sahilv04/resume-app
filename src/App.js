@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
+import { client } from './client';
 
-function App() {
+const App = () => {
+  const [profile, setProfile] = useState(null)
+  useEffect(() => {
+    client.getEntries({ content_type: "resume" }).then((res) => {
+      setProfile(res.items[0].fields)
+    })
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {
+        profile &&
+        <div>
+          <div>{profile.name}</div>
+          <div>{profile.email}</div>
+          <div>{profile.phone}</div>
+          <div>{profile.location}</div>
+        </div>
+      }
     </div>
   );
 }

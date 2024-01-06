@@ -11,32 +11,38 @@
 }
 
 .resume-content .resume-content-inner {
+  color: #7a7b7d;
+  font-size: 12px;
+  line-height: 16px;
   display: flex;
 }
 
 .resume-content .resume-content-inner .primary-section {
   width: 75%;
-  padding: 10px;
+  padding: 12px;
 }
 
 .resume-content .resume-content-inner .secondary-section {
   width: 25%;
   background-color: #e9f5ff;
-  padding: 10px;
-}
-
-.resume-content .resume-content-inner .heading {
-  color: #0c5394;
+  padding: 12px;
 }
 
 .no-print {
   display: none;
 }
 
-.resume-content .resume-content-inner .section-heading {
+.resume-content .resume-content-inner .block-container {
+  margin-bottom: 18px;
+}
+
+.resume-content .resume-content-inner .block-heading {
+  color: #0c5394;
   font-size: 16px;
   margin: 0;
   border-bottom: 1px solid #e2ebf3;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 

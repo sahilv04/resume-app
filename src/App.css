@@ -1,6 +1,44 @@
 .App {
-  text-align: center;
+  padding: 10px 20px;
 }
+
+.resume-container {
+  border: 1px solid #a3a2a2;
+}
+
+.resume-content {
+  padding: 20px 40px;
+}
+
+.resume-content .resume-content-inner {
+  display: flex;
+}
+
+.resume-content .resume-content-inner .primary-section {
+  width: 75%;
+  padding: 10px;
+}
+
+.resume-content .resume-content-inner .secondary-section {
+  width: 25%;
+  background-color: #e9f5ff;
+  padding: 10px;
+}
+
+.resume-content .resume-content-inner .heading {
+  color: #0c5394;
+}
+
+.no-print {
+  display: none;
+}
+
+.resume-content .resume-content-inner .section-heading {
+  font-size: 16px;
+  margin: 0;
+  border-bottom: 1px solid #e2ebf3;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -32,6 +70,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

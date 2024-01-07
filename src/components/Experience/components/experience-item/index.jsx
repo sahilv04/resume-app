@@ -6,7 +6,6 @@ const ExperienceItem = ({ item }) => {
     const { id } = item.sys
 
     const desHtml = documentToHtmlString(description)
-    console.log(desHtml)
 
     useEffect(() => {
         if (document.getElementById("desc-" + id)) {

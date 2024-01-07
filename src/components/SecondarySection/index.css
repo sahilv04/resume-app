@@ -5,9 +5,5 @@
 .linkedin-container a {
     color: #0c5394;
     text-decoration: none;
-}
-
-.linkedin-container svg {
-    height: 35px;
-    width: 35px;
+    word-break: break-all;
 }

@@ -6,6 +6,18 @@
   border: 1px solid #a3a2a2;
 }
 
+p{
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex.space-between {
+  justify-content: space-between;
+}
+
 .resume-content {
   padding: 30px;
 }

@@ -1,1 +1,3 @@
-.experience-container {}
+.experience-container .block-item-container {
+    margin-bottom: 16px;
+}

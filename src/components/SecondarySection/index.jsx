@@ -68,7 +68,7 @@ const SecondarySection = () => {
 
             <div className="block-container">
                 <BlockHeading>Linkedin</BlockHeading>
-                <div className="linkedin-container"><a target="_blank" href={profile.linkedin}>{profile.linkedin}</a></div>
+                <div className="linkedin-container"><a target="_blank" href={profile.linkedin} >{profile.linkedin}</a></div>
             </div>
 
         </div>

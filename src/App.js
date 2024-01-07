@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="App">
       <div className='print-btn-container'>
-        <button onClick={handlePrint} className='print-btn'><img src={PrintIcon} /></button>
+        <button onClick={handlePrint} className='print-btn' title='Click to print resume'><img src={PrintIcon} /></button>
       </div>
       {
         profile &&

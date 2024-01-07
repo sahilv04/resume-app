@@ -4,6 +4,7 @@
 
 .print-btn-container {
   text-align: right;
+  margin-bottom: 12px;
 }
 
 .print-btn-container .print-btn {

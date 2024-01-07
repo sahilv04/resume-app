@@ -2,6 +2,26 @@
   padding: 10px 20px;
 }
 
+.print-btn-container {
+  text-align: right;
+}
+
+.print-btn-container .print-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+}
+
+.print-btn-container .print-btn:hover {
+  background-color: #e9f5ff;
+}
+
+.print-btn-container .print-btn img {
+  height: 30px;
+  width: 30px;
+}
+
 .resume-container {
   border: 1px solid #a3a2a2;
 }
@@ -56,12 +76,14 @@ p {
 .resume-content .resume-content-inner .primary-section {
   width: 75%;
   padding: 12px;
+  padding-bottom: 0;
 }
 
 .resume-content .resume-content-inner .secondary-section {
   width: 25%;
   background-color: #e9f5ff;
   padding: 12px;
+  padding-bottom: 0;
 }
 
 .no-print {

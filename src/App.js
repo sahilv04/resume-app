@@ -5,6 +5,7 @@ import { useReactToPrint } from 'react-to-print';
 import ResumeComponent from './components/ResumeComponent';
 import { useDispatch, useSelector } from 'react-redux';
 import { setResume } from './redux/main/reducer';
+import PrintIcon from "./assets/icons/print-icon.png"
 
 const App = () => {
   const dispatch = useDispatch()
@@ -23,7 +24,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <button onClick={handlePrint}>print</button>
+      <div className='print-btn-container'>
+        <button onClick={handlePrint} className='print-btn'><img src={PrintIcon} /></button>
+      </div>
       {
         profile &&
         <div className='resume-container'>

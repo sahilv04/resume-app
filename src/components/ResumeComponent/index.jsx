@@ -1,11 +1,11 @@
 import PrimarySection from "../PrimarySection"
 import SecondarySection from "../SecondarySection"
 
-const ResumeComponent = ({ profile }) => {
+const ResumeComponent = () => {
     return (
         <div className='resume-content-inner'>
-            <PrimarySection profile={profile} />
-            <SecondarySection profile={profile} />
+            <PrimarySection />
+            <SecondarySection />
         </div>
     )
 }

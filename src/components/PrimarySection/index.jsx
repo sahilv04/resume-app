@@ -1,11 +1,11 @@
 import Experience from "../Experience"
 import ResumeTitle from "../ResumeTitle"
 
-const PrimarySection = ({ profile }) => {
+const PrimarySection = () => {
     return (
         <div className='primary-section'>
-            <ResumeTitle profile={profile} />
-            <Experience profile={profile} />
+            <ResumeTitle />
+            <Experience />
         </div>
     )
 }

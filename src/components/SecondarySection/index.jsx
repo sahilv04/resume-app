@@ -1,6 +1,10 @@
+import { useSelector } from "react-redux"
 import BlockHeading from "../BlockHeading"
 
-const SecondarySection = ({ profile }) => {
+const SecondarySection = () => {
+    const mainState = useSelector(state => state.main)
+    const { fields: profile } = mainState.resume
+
     return (
         <div className='secondary-section'>
             <div className="block-container">

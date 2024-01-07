@@ -17,11 +17,11 @@ const ExperienceItem = ({ item }) => {
     return (
         <div className="block-item-container">
             <div className="title-row">
-                <b>{company}</b>, {location}
+                <b className='fs-subtitle color-subtitle'>{company}</b>, {location}
             </div>
             <div className="d-flex space-between sub-title-row">
                 <div>
-                    <b>{title}</b>
+                    <b className='fs-subtitle'>{title}</b>
                 </div>
                 <div>{from} - {to}</div>
             </div>

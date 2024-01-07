@@ -6,12 +6,32 @@
   border: 1px solid #a3a2a2;
 }
 
-p{
+.block-item-container .title-row {
+  margin-bottom: 10px;
+}
+
+.block-item-container .description>p {
+  padding-left: 25px;
+}
+
+.block-item-container ul {
+  margin-top: 6px
+}
+
+p {
   margin: 0;
 }
 
 .d-flex {
   display: flex;
+}
+
+.fs-subtitle {
+  font-size: 14px;
+}
+
+.color-subtitle {
+  color: #0c5394
 }
 
 .d-flex.space-between {

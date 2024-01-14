@@ -11,14 +11,14 @@ const App = () => {
   const dispatch = useDispatch()
   const mainState = useSelector(state => state.main)
   const componentRef = useRef();
-
+  const resumeId = process.env.REACT_APP_RESUME_ID
   const { fields: profile } = mainState.resume || {}
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
   useEffect(() => {
-    client.getEntries({ content_type: "resume", include: 10 }).then((res) => {
-      dispatch(setResume(res.items[0]))
+    client.getEntry(resumeId).then((res) => {
+      dispatch(setResume(res))
     })
   }, [])
 

@@ -24,6 +24,7 @@
 }
 
 .resume-container {
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0px -15px 10px -10px rgba(0, 0, 0, 0.45),
     15px 0px 10px -15px rgba(0, 0, 0, 0.45),
@@ -65,10 +66,6 @@ p {
 
 .d-flex.space-between {
   justify-content: space-between;
-}
-
-.resume-content {
-  padding: 30px;
 }
 
 .resume-content .resume-content-inner {
@@ -144,4 +141,8 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+
+@page {
+  margin: 1cm;
 }

@@ -10,23 +10,27 @@ const SecondarySection = () => {
 
     const skillsHtml = documentToHtmlString(profile.skills)
     const certifications = documentToHtmlString(profile.certifications)
-    const strengths = documentToHtmlString(profile.strengths)
+    const strengths = profile.strengths ? documentToHtmlString(profile.strengths) : ""
     const education = documentToHtmlString(profile.education)
 
     useEffect(() => {
-        document.getElementById("skills_block_id").innerHTML = skillsHtml
+        if (document.getElementById("skills_block_id"))
+            document.getElementById("skills_block_id").innerHTML = skillsHtml
     }, [skillsHtml])
 
     useEffect(() => {
-        document.getElementById("certifications_block_id").innerHTML = certifications
+        if (document.getElementById("certifications_block_id"))
+            document.getElementById("certifications_block_id").innerHTML = certifications
     }, [certifications])
 
     useEffect(() => {
-        document.getElementById("strengths_block_id").innerHTML = strengths
+        if (document.getElementById("strengths_block_id"))
+            document.getElementById("strengths_block_id").innerHTML = strengths
     }, [strengths])
 
     useEffect(() => {
-        document.getElementById("education_block_id").innerHTML = education
+        if (document.getElementById("education_block_id"))
+            document.getElementById("education_block_id").innerHTML = education
     }, [education])
 
     return (
@@ -49,10 +53,13 @@ const SecondarySection = () => {
                 <BlockHeading>Education</BlockHeading>
                 <div id="education_block_id"></div>
             </div>
-            <div className="block-container">
-                <BlockHeading>Strengths</BlockHeading>
-                <div id="strengths_block_id"></div>
-            </div>
+            {
+                strengths &&
+                <div className="block-container">
+                    <BlockHeading>Strengths</BlockHeading>
+                    <div id="strengths_block_id"></div>
+                </div>
+            }
             <div className="block-container">
                 <BlockHeading>Languages</BlockHeading>
                 <ul>

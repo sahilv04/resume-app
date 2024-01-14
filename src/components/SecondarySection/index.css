@@ -2,6 +2,11 @@
     padding-left: 18px;
 }
 
+.secondary-section .block-container .icon-label svg {
+    height: 10px;
+    width: 10px;
+}
+
 .linkedin-container a {
     color: #0c5394;
     text-decoration: none;

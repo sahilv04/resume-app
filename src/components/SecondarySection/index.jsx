@@ -3,6 +3,9 @@ import BlockHeading from "../BlockHeading"
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { useEffect } from 'react';
 import "./index.css"
+import LocationIcon from "../icons/LocationIcon";
+import EmailIcon from "../icons/EmailIcon";
+import PhoneIcon from "../icons/PhoneIcon";
 
 const SecondarySection = () => {
     const mainState = useSelector(state => state.main)
@@ -37,9 +40,9 @@ const SecondarySection = () => {
         <div className='secondary-section'>
             <div className="block-container">
                 <BlockHeading>Contact</BlockHeading>
-                <div>{profile.location}</div>
-                <div>{profile.email}</div>
-                <div>{profile.phone}</div>
+                <div className="icon-label"><LocationIcon /> {profile.location}</div>
+                <div className="icon-label"><EmailIcon /> {profile.email}</div>
+                <div className="icon-label"><PhoneIcon /> {profile.phone}</div>
             </div>
             <div className="block-container">
                 <BlockHeading>Skills</BlockHeading>

@@ -40,9 +40,9 @@ const SecondarySection = () => {
         <div className='secondary-section'>
             <div className="block-container">
                 <BlockHeading>Contact</BlockHeading>
-                <div className="icon-label"><LocationIcon /> {profile.location}</div>
-                <div className="icon-label"><EmailIcon /> {profile.email}</div>
                 <div className="icon-label"><PhoneIcon /> {profile.phone}</div>
+                <div className="icon-label"><EmailIcon /> {profile.email}</div>
+                <div className="icon-label"><LocationIcon /> {profile.location}</div>
             </div>
             <div className="block-container">
                 <BlockHeading>Skills</BlockHeading>
